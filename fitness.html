@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Fitness Tracker</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tracker">Tracker</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <section id="home" class="hero">
+
+        <h1>Track Your Fitness. Improve Yourself.</h1>
+
+        <p>
+            "Success starts with small steps every day."
+        </p>
+
+        <a href="#tracker" class="start-btn">Start Tracking</a>
+
+    </section>
+
+
+    <section id="tracker">
+
+        <h2>Today's Fitness</h2>
+
+        <div class="input-box">
+
+            <input type="number" id="steps" placeholder="Steps">
+
+            <input type="number" id="heartRate" placeholder="Heart Rate (BPM)">
+
+            <input type="number" id="workout" placeholder="Workout Minutes">
+
+            <button onclick="updateTracker()">Update Tracker</button>
+
+        </div>
+
+
+        <div class="dashboard">
+
+            <div class="card">
+                <h3>Steps</h3>
+                <p id="stepResult">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Calories Burned</h3>
+                <p id="calorieResult">0 kcal</p>
+            </div>
+
+            <div class="card">
+                <h3>Heart Rate</h3>
+                <p id="heartResult">0 BPM</p>
+            </div>
+
+            <div class="card">
+                <h3>Workout</h3>
+                <p id="workoutResult">0 min</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="quote">
+
+        <h2>Daily Motivation</h2>
+
+        <p>
+            "Take care of your body. It's the only place you have to live."
+        </p>
+
+    </section>
+
+
+    <section id="about" class="about">
+
+        <h2>About Fitness Tracker</h2>
+
+        <p>
+            Fitness Tracker is a simple web application that helps users
+            monitor their daily physical activities. Users can enter their
+            steps, calories, heart rate and workout time and view their
+            progress easily.
+        </p>
+
+    </section>
+
+
+    <footer>
+        <p>Fitness Tracker © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
